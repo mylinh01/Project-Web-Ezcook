@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="bai1-JSP:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>false</exploded>
+        <module>bai1-JSP</module>
+        <packaging>war</packaging>
+        <unpackNestedArchives>false</unpackNestedArchives>
+      </options>
+    </properties>
+    <root id="archive" name="bai1-JSP-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="bai1-JSP:war exploded" />
+    </root>
+  </artifact>
+</component>
