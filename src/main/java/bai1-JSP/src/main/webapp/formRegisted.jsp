@@ -10,11 +10,11 @@
 <body>
 <h1>Register</h1>
 <sql:setDataSource  driver="org.postgresql.Driver"
-                    url="jdbc:postgresql://ec2-52-7-159-155.compute-1.amazonaws.com:5432/d3158tfucs41sa"
-                    user="ywwobdhewswilp" password="123d87e142236ac15ab7fe659be8807dd0af630fa669598fe4d777ef1957caf4" var ="data"/>
+                    url="jdbc:postgresql://ec2-54-159-35-35.compute-1.amazonaws.com:5432/d37tfeuqn9sfbb"
+                    user="ukffckmjxuwehs" password="37b320e7be9f32ee6edd7d88a59fe3009bb9b0814e2512e8ab98f54faf687ccc" var ="data"/>
 <sql:transaction dataSource="${data}" >
     <sql:update var="insert">
-        INSERT INTO baitapweb.userInfo(UserName,Password,FirstName,LastName,Gender,Address) VALUES(?,?,?,?,?,?)
+        INSERT INTO userInfo(UserName,Password,FirstName,LastName,Gender,Address) VALUES(?,?,?,?,?,?)
         <sql:param value="${param.userName}"/>
         <sql:param value="${param.password}"/>
         <sql:param value="${param.firstName}"/>
