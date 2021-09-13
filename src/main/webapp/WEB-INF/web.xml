@@ -4,11 +4,11 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
          <context-param>
-        <param-name>contextConfigLocation</param-name>
-        <param-value>
-            /WEB-INF/context.xml
-        </param-value>
-    </context-param>
+             <param-name>contextConfigLocation</param-name>
+                <param-value>
+                     /WEB-INF/context.xml
+                 </param-value>
+             </context-param>
     <servlet>
         <servlet-name>registerJS</servlet-name>
         <servlet-class>demoJSP_Servlet.src.main.java.servlet.RegisterServlet</servlet-class>
