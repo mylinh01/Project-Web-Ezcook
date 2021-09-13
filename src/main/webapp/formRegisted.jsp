@@ -14,7 +14,7 @@
                        user="ukffckmjxuwehs" password="37b320e7be9f32ee6edd7d88a59fe3009bb9b0814e2512e8ab98f54faf687ccc" var ="data"/>
         <sql:transaction dataSource="${data}" >
             <sql:update var="insert">
-                INSERT INTO baitapweb.userInfo(UserName,Password,FirstName,LastName,Gender,Address) VALUES(?,?,?,?,?,?)
+                INSERT INTO userInfo(UserName,Password,FirstName,LastName,Gender,Address) VALUES(?,?,?,?,?,?)
                 <sql:param value="${param.userName}"/>
                 <sql:param value="${param.password}"/>
                 <sql:param value="${param.firstName}"/>
