@@ -13,7 +13,7 @@ public class SqlGatewayServlet extends HttpServlet {
    Class.forName("org.postgresql.Driver");
 
 
-   String dbURL = "jdbc:postgresql://ec2-54-159-35-35.compute-1.amazonaws.com:5432/d37tfeuqn9sfbb";
+   String dbURL = "jdbc:postgresql://ec2-54-159-35-35.compute-1.amazonaws.com:5432/d37tfeuqn9sfbb?sslmode=require";
    String username = "ukffckmjxuwehs";
    String password = "37b320e7be9f32ee6edd7d88a59fe3009bb9b0814e2512e8ab98f54faf687ccc";
    Connection connection = DriverManager.getConnection(dbURL, username, password);
