@@ -14,7 +14,9 @@ body {
     margin-left: 50px;
     margin-right: 50px;
 }
-
+form{
+    background-color: #e2e2e2;
+}
 .aaa {
     transition: all 0.3s ease;
     color: rgb(209, 82, 82);
@@ -104,9 +106,7 @@ h2, p { color: #000000; }
     padding-left: 14px;
     padding-top: 5px;
 }
-#tenLinh{
-    font-size: 150%;
-}
-#tenTrung{
-    font-size: 150%;
+
+form h3{
+    font-size: 140%;
 }
