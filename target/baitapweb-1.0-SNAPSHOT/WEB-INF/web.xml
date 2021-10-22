@@ -3,30 +3,27 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-    <servlet>
-        <servlet-name>registerJS</servlet-name>
-        <servlet-class>demoJSP_Servlet.src.main.java.servlet.RegisterServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>registerJS</servlet-name>
-        <url-pattern>/registerJS</url-pattern>
-    </servlet-mapping>
 
-    <servlet>
-        <servlet-name>EmailListServlet</servlet-name>
-        <servlet-class>demo2.src.main.java.email.EmailListServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>EmailListServlet</servlet-name>
-        <url-pattern>/emailList</url-pattern>
+    <filter>
+        <filter-name>sitemesh</filter-name>
+        <filter-class>com.opensymphony.module.sitemesh.filter.PageFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>sitemesh</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 
-    </servlet-mapping>
-
+    <session-config>
+        <tracking-mode>COOKIE</tracking-mode>
+    </session-config>
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
-        <welcome-file>formHtml.html</welcome-file>
-        <welcome-file>formProcessing.jsp</welcome-file>
-        <welcome-file>formRegisted.jsp</welcome-file>
-
+        <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
+    <resource-ref>
+        <description>DB Connection</description>
+        <res-ref-name>jdbc/d37tfeuqn9sfbb</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
 </web-app>

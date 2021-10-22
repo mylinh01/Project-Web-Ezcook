@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context path="/ch12email">
-    <Resource name="jdbc/d3158tfucs41sa" auth="Container"
+<Context path="">
+    <Resource name="jdbc/d37tfeuqn9sfbb" auth="Container"
               driverClassName="org.postgresql.Driver"
-              url="jdbc:postgresql://ec2-52-7-159-155.compute-1.amazonaws.com:5432/d3158tfucs41sa"
-              user="ywwobdhewswilp" password="123d87e142236ac15ab7fe659be8807dd0af630fa669598fe4d777ef1957caf4"
+              url="jdbc:postgresql://ec2-54-159-35-35.compute-1.amazonaws.com:5432/d37tfeuqn9sfbb?sslmode=require"
+              user="ukffckmjxuwehs" password="37b320e7be9f32ee6edd7d88a59fe3009bb9b0814e2512e8ab98f54faf687ccc"
               maxActive="100" maxIdle="30" maxWait="10000"
               logAbandoned="true" removeAbandoned="true"
               removeAbandonedTimeout="60" type="javax.sql.DataSource" />
