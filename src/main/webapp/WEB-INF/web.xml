@@ -12,14 +12,6 @@
         <filter-name>sitemesh</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
-    <servlet>
-        <servlet-name>EmailController</servlet-name>
-        <servlet-class>controllers.EmailListController</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>EmailController</servlet-name>
-        <url-pattern>/emailList</url-pattern>
-    </servlet-mapping>
     <session-config>
         <tracking-mode>COOKIE</tracking-mode>
     </session-config>
