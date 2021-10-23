@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@include file="/common/taglib.jsp" %>
 <c:url value="/emailList" var="email"/>
+<c:url value="/cart" var="cart"/>
 <!DOCTYPE html>
 <html lang="en">
 <body>
@@ -29,7 +30,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
                         <form action="">
-                            <a href="" class="aaa">
+                            <a href="<c:url value="/cart"/>" class="aaa">
                                 <div class="position-relative tm-thumbnail-container">
                                     <img src="template/giaodien/img/cart.jpg" alt="Image"
                                          class="img-fluid tm-catalog-item-img">

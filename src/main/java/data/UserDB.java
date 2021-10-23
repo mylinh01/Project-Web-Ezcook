@@ -15,7 +15,7 @@ public class UserDB {
         PreparedStatement ps = null;
 
         String query
-                = "INSERT INTO NguoiDung(Email, FirstName, LastName) "
+                = "INSERT INTO nguoidung(Email, FirstName, LastName) "
                 + "VALUES (?, ?, ?)";
         try {
             ps = connection.prepareStatement(query);
@@ -37,7 +37,7 @@ public class UserDB {
         Connection connection = pool.getConnection();
         PreparedStatement ps = null;
 
-        String query = "UPDATE NguoiDung SET "
+        String query = "UPDATE nguoidung SET "
                 + "FirstName = ?, "
                 + "LastName = ? "
                 + "WHERE Email = ?";
@@ -62,7 +62,7 @@ public class UserDB {
         Connection connection = pool.getConnection();
         PreparedStatement ps = null;
 
-        String query = "DELETE FROM NguoiDung "
+        String query = "DELETE FROM nguoidung "
                 + "WHERE Email = ?";
         try {
             ps = connection.prepareStatement(query);
@@ -84,7 +84,7 @@ public class UserDB {
         PreparedStatement ps = null;
         ResultSet rs = null;
 
-        String query = "SELECT Email FROM NguoiDung "
+        String query = "SELECT Email FROM nguoidung "
                 + "WHERE Email = ?";
         try {
             ps = connection.prepareStatement(query);
@@ -107,7 +107,7 @@ public class UserDB {
         PreparedStatement ps = null;
         ResultSet rs = null;
 
-        String query = "SELECT * FROM NguoiDung "
+        String query = "SELECT * FROM nguoidung "
                 + "WHERE Email = ?";
         try {
             ps = connection.prepareStatement(query);
@@ -137,7 +137,7 @@ public class UserDB {
         PreparedStatement ps = null;
         ResultSet rs = null;
 
-        String query = "SELECT * FROM NguoiDung";
+        String query = "SELECT * FROM nguoidung";
         try {
             ps = connection.prepareStatement(query);
             rs = ps.executeQuery();

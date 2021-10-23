@@ -6,23 +6,24 @@
 <head>
     <meta charset="utf-8">
     <title>Thanks</title>
-    <link rel="stylesheet" href="<c:url value="/template/email/main.css"/>"/>
+    <link rel="stylesheet" href="<c:url value="/template/asset/email/main.css"/>"/>
 </head>
 <body>
 <h1>Thanks for joining our email list</h1>
-<p>Here is the information that you entered:</p>
-<label>Email:</label>
-<span>${user.email}</span><br>
-<label>First Name:</label>
-<span>${user.firstName}</span><br>
-<label>Last Name:</label>
-<span>${user.lastName}</span><br>
-<p>To enter another email address, click on the Back
-    button in your browser or the Return button shown
-    below.</p>
-<form action="" method="get">
-    <input type="hidden" name="action" value="join">
-    <input type="submit" value="Return">
+<h2>Here is the information that you entered:</h2>
+<form action="" method="get" class="formthanks">
+    <div class="div-thanks">
+        <input type="hidden" name="action" value="back"> <%-- //join--%>
+        <label class="thanks-nd">Email:</label>
+        <span class="thanks-nd">${user.email}</span><br>
+        <label class="thanks-nd">First Name:</label>
+        <span class="thanks-nd">${user.firstName}</span><br>
+        <label class="thanks-nd">Last Name:</label>
+        <span class="thanks-nd">${user.lastName}</span><br>
+
+        <input type="submit" value="Home" class="btnhome">
+    </div>
+
 </form>
 </body>
 </html>

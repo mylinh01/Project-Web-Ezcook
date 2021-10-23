@@ -12,12 +12,19 @@
         <filter-name>sitemesh</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+<!--    <listener>-->
+<!--        <listener-class>utils.CartSessionListener</listener-class>-->
+<!--    </listener>-->
+<!--    <listener>-->
+<!--        <listener-class>utils.CartContextListener</listener-class>-->
+<!--    </listener>-->
     <session-config>
         <tracking-mode>COOKIE</tracking-mode>
     </session-config>
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
         <welcome-file>index.jsp</welcome-file>
+        <welcome-file>loadProducts</welcome-file>
     </welcome-file-list>
     <resource-ref>
         <description>DB Connection</description>
