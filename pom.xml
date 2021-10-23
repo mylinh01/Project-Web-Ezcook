@@ -9,7 +9,6 @@
     <version>1.0-SNAPSHOT</version>
     <name>baitapweb</name>
     <packaging>war</packaging>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -22,26 +21,26 @@
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
             <version>1.2</version>
-         </dependency>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
-			<dependency>
-			    <groupId>org.postgresql</groupId>
-			    <artifactId>postgresql</artifactId>
-			    <version>9.4-1200-jdbc41</version>
-			</dependency>
-<!--        hibernate-->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>9.4-1200-jdbc41</version>
+        </dependency>
+        <!--        hibernate-->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
             <version>4.3.7.Final</version>
         </dependency>
-<!--        decorator-->
+        <!--        decorator-->
         <dependency>
             <groupId>opensymphony</groupId>
             <artifactId>sitemesh</artifactId>
             <version>2.4.2</version>
         </dependency>
-<!--        -->
+        <!--        -->
         <dependency>
             <groupId>com.amazon.redshift</groupId>
             <artifactId>redshift-jdbc42</artifactId>
@@ -88,37 +87,42 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>com.heroku.sdk</groupId>
+                <artifactId>heroku-maven-plugin</artifactId>
+                <version>3.0.3</version>
+            </plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.3.1</version>
             </plugin>
-            <plugin>
-   <groupId>org.apache.maven.plugins</groupId>
-   <artifactId>maven-dependency-plugin</artifactId>
-   <version>2.3</version>
-<!--   <configuration>-->
-<!--      <failOnMissingWebXml>false</failOnMissingWebXml>-->
-<!--   </configuration>-->
 
-   <executions>
-      <execution>
-         <phase>package</phase>
-         <goals>
-            <goal>copy</goal>
-         </goals>
-         <configuration>
-            <artifactItems>
-               <artifactItem>
-                  <groupId>com.github.jsimone</groupId>
-                  <artifactId>webapp-runner</artifactId>
-                  <version>8.0.30.2</version>
-                  <destFileName>webapp-runner.jar</destFileName>
-               </artifactItem>
-            </artifactItems>
-         </configuration>
-      </execution>
-   </executions>
-</plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>2.3</version>
+                <!--   <configuration>-->
+                <!--      <failOnMissingWebXml>false</failOnMissingWebXml>-->
+                <!--   </configuration>-->
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>com.github.jsimone</groupId>
+                                    <artifactId>webapp-runner</artifactId>
+                                    <version>8.0.30.2</version>
+                                    <destFileName>webapp-runner.jar</destFileName>
+                                </artifactItem>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 </project>
