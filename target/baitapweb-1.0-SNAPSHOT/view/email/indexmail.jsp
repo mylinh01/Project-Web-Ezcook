@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8">
     <title>Email</title>
-    <link rel="stylesheet" href="<c:url value="/template/asset/email/main.css"/>"/>
+    <link rel="stylesheet" href="<c:url value="/template/asset/email/email.css"/>"/>
 </head>
 <body>
 <h1 id="hat1">Join our email list</h1>
