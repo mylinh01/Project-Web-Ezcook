@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8">
     <title>Email</title>
-    <link rel="stylesheet" href="<c:url value="/template/asset/email/email.css"/>"/>
+    <link rel="stylesheet" href="<c:url value="/template/asset/email/emails.css"/>"/>
 </head>
 <body>
 <h1 id="hat1">Join our email list</h1>
@@ -24,8 +24,10 @@
         <input class="pad_top" type="text" name="lastName" value="${user.lastName}"><br>
         <input type="submit" value="Join Now" class="btnhome">
     </div>
-
 </form>
-
+<%--<form id="rreturnhome" action="" method="post">
+    <input type="hidden" name="action" value="back">
+    <input type="submit" value="Home">
+</form>--%>
 </body>
 </html>
