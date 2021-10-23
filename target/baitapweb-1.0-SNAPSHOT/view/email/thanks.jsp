@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <title>Thanks</title>
-    <link rel="stylesheet" href="<c:url value="/template/asset/email/main.css"/>"/>
+    <link rel="stylesheet" href="<c:url value="/template/asset/email/email.css"/>"/>
 </head>
 <body>
 <h1>Thanks for joining our email list</h1>
