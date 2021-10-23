@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Produce</title>
-    <link rel="stylesheet" href="<c:url value="/template/asset/cart/cart.css"/>"/>
+    <link rel="stylesheet" href="<c:url value="/template/asset/cart/carts.css"/>"/>
 </head>
 <body>
 
@@ -17,18 +17,24 @@
     </tr>
     <c:forEach var="product" items="${products}">
         <tr>
-            <td><c:out value='${product.description}' /></td>
+            <td><c:out value='${product.description}'/></td>
             <td class="center">${product.priceCurrencyFormat}</td>
-            <td><form id="formproduce" action="cart" method="post">
-                <input type="hidden" name="productCode"
-                       value="${product.code}">
-                <input type="submit" id="btn-addcart" value="Add To Cart">
-            </form></td>
+            <td>
+                <form id="formproduce" action="cart" method="post">
+                    <input type="hidden" name="productCode"
+                           value="${product.code}">
+                    <input type="submit" id="btn-addcart" value="Add To Cart">
+                </form>
+
+            </td>
         </tr>
     </c:forEach>
 </table>
 
 <h2 id="h2produce">For customer service, please send an email to ${custServEmail}.</h2>
-
+<%--<form id="rreturnhome" action="" method="post">
+    <input type="hidden" name="action" value="back">
+    <input type="submit" value="Home">
+</form>--%>
 </body>
 </html>

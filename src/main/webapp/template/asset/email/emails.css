@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+
+}
+h1 {
+    font-size: 300%;
+    margin-top: 30px;
+    text-align: center;
+    color: teal;
+    margin-bottom: 10px;
+}
+h2 {
+    font-size: 120%;
+    color: #000000;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.formemail{
+    border: 5px solid black;
+    background-color: #35e058;
+    position: absolute;
+    left: 32%;
+    width: 550px;
+    height: 300px;
+
+}
+.formthanks{
+    border: 5px solid black;
+    background-color: #35e058;
+    position: absolute;
+    left: 32%;
+    width: 500px;
+    height: 300px;
+
+}
+label {
+    float: left;
+    width: 7em;
+    margin-bottom: 0.5em;
+    margin-left: 30px;
+    font-weight: bold;
+}
+input{
+    margin-right: 30px;
+    /*margin-top: 20px;*/
+}
+input[type="text"], input[type="email"] {  /* An attribute selector */
+    width: 15em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+br {
+    clear: both;
+}
+
+.pad_top {
+    margin-bottom: 20px;
+}
+
+.btnhome{
+    margin-top: 20px;
+    margin-left: 200px;
+}
+.thanks-nd{
+    margin-bottom: 20px;
+}
+.div-thanks{
+    margin-top: 50px;
+}
+#rreturnhome{
+    display: block;
+    margin-left: auto; margin-right: auto;
+    margin-top: 80%;
+    width: 100px;
+    background-color: #ffffff;
+}

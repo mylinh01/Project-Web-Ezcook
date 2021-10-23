@@ -3,6 +3,7 @@
 <c:url value="/emailList" var="email"/>
 <c:url value="/cart" var="cart"/>
 <c:url value="/produce" var="produce"/>
+<c:url value="/download" var="download"/>
 <!DOCTYPE html>
 <html lang="en">
 <body>
@@ -14,18 +15,18 @@
                 <h2 class="tm-page-title mb-4">Bài tập giữa kì</h2>
                 <div class="row tm-catalog-item-list">
                     <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-<%--                        <form action="${email}" id="email" method="get">--%>
-                            <a href="<c:url value="/emailList"/> " class="aaa">
-                                <div class="position-relative tm-thumbnail-container">
-                                    <img src="template/giaodien/img/email.png" alt="Image"
-                                         class="img-fluid tm-catalog-item-img">
-                                </div>
-                                <div class="p-4">
-                                    <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Email</h3>
-                                    <p class="tm-catalog-item-text">Bài tập về Email </p>
-                                </div>
-                            </a>
-<%--                        </form>--%>
+                        <%--                        <form action="${email}" id="email" method="get">--%>
+                        <a href="<c:url value="/emailList"/> " class="aaa">
+                            <div class="position-relative tm-thumbnail-container">
+                                <img src="template/giaodien/img/email.png" alt="Image"
+                                     class="img-fluid tm-catalog-item-img">
+                            </div>
+                            <div class="p-4">
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Email</h3>
+                                <p class="tm-catalog-item-text">Bài tập về Email </p>
+                            </div>
+                        </a>
+                        <%--                        </form>--%>
 
 
                     </div>
@@ -47,7 +48,7 @@
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
                         <form action="">
-                            <a href="#" class="aaa">
+                            <a href="<c:url value="/download"/>" class="aaa">
                                 <div class="position-relative tm-thumbnail-container">
                                     <img src="template/giaodien/img/download.png" alt="Image"
                                          class="img-fluid tm-catalog-item-img">
@@ -117,7 +118,7 @@
                                      class="img-fluid tm-catalog-item-img img-member">
                             </div>
                             <div class="p-4">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title" >Lương Quốc
+                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Lương Quốc
                                     Trung</h3>
                                 <p class="tm-catalog-item-text">19110489</p>
                             </div>

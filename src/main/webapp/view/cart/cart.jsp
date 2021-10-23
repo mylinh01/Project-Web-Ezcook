@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Cart</title>
-    <link rel="stylesheet" href="<c:url value="/template/asset/cart/cart.css"/>"/>
+    <link rel="stylesheet" href="<c:url value="/template/asset/cart/carts.css"/>"/>
 </head>
 <body>
 <h1>Your cart</h1>
@@ -53,7 +53,7 @@
 
     <form id="returnhome" action="" method="post">
         <input type="hidden" name="action" value="back">
-        <input type="submit" value="Return">
+        <input type="submit" value="Home">
     </form>
 </div>
 
