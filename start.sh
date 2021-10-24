@@ -27,4 +27,4 @@ cat << EOF > context.xml
               logAbandoned="true" removeAbandoned="true"
               type="javax.sql.DataSource"/>
 EOF
-java -jar target/dependency/webapp-runner.jar --port $PORT target/*.war
+java -jar target/dependency/webapp-runner.jar 
