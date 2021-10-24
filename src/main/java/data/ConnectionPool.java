@@ -11,8 +11,14 @@ public class ConnectionPool {
 
     private ConnectionPool(){
         try {
-            InitialContext ic= new InitialContext();
-            dataSource=(DataSource)ic.lookup("java:comp/env/jdbc/d37tfeuqn9sfbb");
+            InitialContext cxt = new InitialContext();
+            if ( cxt == null ) {
+                System.out.println("Uh oh -- no context!");
+            }
+            DataSource ds = (DataSource) cxt.lookup( "java:/comp/env/jdbc/d37tfeuqn9sfbb");
+            if ( ds == null ) {
+                System.out.println("Data source not found!");
+            }
         }catch (NamingException e)
         {
             System.out.println(e);
