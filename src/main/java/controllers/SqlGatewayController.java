@@ -19,21 +19,23 @@ public class SqlGatewayController extends HttpServlet {
         // get a connection
         ConnectionPool pool = ConnectionPool.getInstance();
         Connection connection = pool.getConnection();
-
         String sqlStatement = request.getParameter("sqlStatement");
         String sqlResult = "";
+//        if (action.equals("back")){
+////            url=("/view/home.jsp");
+//            response.sendRedirect("/home");
+//        }else
         try {
             // create a statement
             Statement statement = connection.createStatement();
-
+            if(sqlStatement==null) sqlStatement="select * from nguoidung";
             // parse the SQL string
             sqlStatement = sqlStatement.trim();
             if (sqlStatement.length() >= 6) {
                 String sqlType = sqlStatement.substring(0, 6);
                 if (sqlType.equalsIgnoreCase("select")) {
                     // create the HTML for the result set
-                    ResultSet resultSet
-                            = statement.executeQuery(sqlStatement);
+                    ResultSet resultSet = statement.executeQuery(sqlStatement);
                     sqlResult = SQLUtil.getHtmlTable(resultSet);
                     resultSet.close();
                 } else {
@@ -56,15 +58,11 @@ public class SqlGatewayController extends HttpServlet {
         } finally {
             pool.freeConnection(connection);
         }
-
         HttpSession session = request.getSession();
         session.setAttribute("sqlResult", sqlResult);
         session.setAttribute("sqlStatement", sqlStatement);
-
-        String url = "/view/sqlgateway/index.jsp";
-        getServletContext()
-                .getRequestDispatcher(url)
-                .forward(request, response);
+        String url = "/view/sqlgateway/indexsql.jsp";
+        getServletContext().getRequestDispatcher(url).forward(request, response);
     }
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
