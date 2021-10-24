@@ -12,10 +12,12 @@ public class ConnectionPool {
     private ConnectionPool(){
         try {
             InitialContext cxt = new InitialContext();
+            System.out.println(cxt);
             if ( cxt == null ) {
                 System.out.println("Uh oh -- no context!");
             }
             dataSource = (DataSource) cxt.lookup( "java:/comp/env/jdbc/d37tfeuqn9sfbb");
+
             if ( dataSource == null ) {
                 System.out.println("Data source not found!");
             }
