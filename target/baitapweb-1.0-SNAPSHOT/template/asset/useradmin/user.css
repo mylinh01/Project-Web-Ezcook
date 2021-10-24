@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+    display: block;
+}
+h1 {
+    font-size: 300%;
+    margin-top: 30px;
+    text-align: center;
+    color: teal;
+    margin-bottom: 10px;
+}
+h2 {
+    font-size: 120%;
+    color: #000000;
+    margin-bottom: 50px;
+    text-align: center;
+}
+label {
+    float: left;
+    width: 7em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+input[type="text"], input[type="email"] {  /* An attribute selector */
+    width: 15em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+span {
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+br {
+    clear: both;
+}
+
+/* The styles for the classes */
+.pad_top {
+    padding-top: 0.25em;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.margin_left {
+    border: 1px solid #363434;
+    background-color: #f8ead5;
+    width: 80px;
+    height: auto;
+    text-align: center;
+}
+
+/* The styles for the tables */
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 50em;
+    margin-left: auto; margin-right: auto;
+}
+th, td {
+    border: 2px solid black;
+    text-align: left;
+    padding: .5em;
+}
+.right {
+    text-align: right;
+}
+.center {
+    text-align: center;
+}
+.btn-rf-home{
+    display:  flex;
+    position: center;
+}
+.btn-rf-home p{
+    margin-top: 20px;
+    margin-left: auto; margin-right: auto;
+    border: 2px solid #000000;
+    padding: 2px;
+    color: black;
+    background-color: gainsboro;
+}
+.btn-update-home{
+    display:  flex;
+    margin-top: 20px;
+    margin-left: 30%;
+}
+.frmupdate{
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin-left: auto; margin-right: auto;
+    width: 600px;
+    height: 320px;
+    background-color: #6cf68c;
+}
+.frmupdate a{
+    border: 1px solid #363434;
+    padding: 8px;
+    color: black;
+    margin-left: 50px;
+    margin-top: 5px;
+    background-color: #f8ead5;
+    width: 80px;
+    height: auto;
+    text-align: center;
+}

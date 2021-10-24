@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <title>SQL Gateway</title>
-    <link rel="stylesheet" href="<c:url value="/template/asset/sqlgateway/sql.css"/>"/>
+    <link rel="stylesheet" href="<c:url value="/template/asset/sqlgateway/sqll.css"/>"/>
 </head>
 <body>
 <%--<c:if test="${sqlStatement == null}">--%>
@@ -25,13 +25,17 @@
 <form id="formmmmm" action="${sql}" method="post">
     <textarea name="sqlStatement" cols=200px rows="8">${sqlStatement}</textarea>
     <br>
-    <input id="exxxxce" type="submit" value="Execute">
+    <div class="divvvv">
+        <input id="exxxxce" type="submit" value="Execute">
+        <a class="aaaaaa" href="home">Home</a>
+    </div>
+
 </form>
 
 ${sqlResult}
-<form id="rreturnhome" action="${home}" method="post">
+<%--<form id="rreturnhome" action="${home}" method="post">
     <input type="hidden" name="action" value="back">
     <input type="submit" value="Home">
-</form>
+</form>--%>
 </body>
 </html>

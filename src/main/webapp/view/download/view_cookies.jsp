@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <title>Murach's Java Servlets and JSP</title>
-    <link rel="stylesheet" href="<c:url value="/template/asset/download/downloads.css"/>"/>
+    <link rel="stylesheet" href="<c:url value="/template/asset/download/download.css"/>"/>
 </head>
 <body>
 
@@ -26,12 +26,10 @@
     </c:forEach>
 </table>
 <div class="divsp">
-    <p><a href="download?action=viewAlbums">View list of albums</a></p>
-
-    <p><a href="download?action=deleteCookies">Delete all persistent cookies</a></p>
+    <a  class="aaaaaa" href="download?action=viewAlbums">View list of albums</a>
+    <a  class="aaaaaa" href="download?action=deleteCookies">Delete all persistent cookies</a>
+    <a class="aaaaaa" href="home">Home</a>
 </div>
-<form class="rreturnhome" action="${home}" method="post">
-    <input type="submit" value="Home">
-</form>
+
 </body>
 </html>

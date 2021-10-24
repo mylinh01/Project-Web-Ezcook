@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <title>Download</title>
-    <link rel="stylesheet" href="<c:url value="/template/asset/download/downloads.css"/>"/>
+    <link rel="stylesheet" href="<c:url value="/template/asset/download/download.css"/>"/>
 </head>
 <body>
 

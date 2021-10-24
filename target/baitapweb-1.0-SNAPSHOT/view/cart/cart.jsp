@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Cart</title>
-    <link rel="stylesheet" href="<c:url value="/template/asset/cart/carts.css"/>"/>
+    <link rel="stylesheet" href="<c:url value="/template/asset/cart/cart.css"/>"/>
 </head>
 <body>
 <h1>Your cart</h1>
