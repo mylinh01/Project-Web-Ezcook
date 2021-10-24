@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Produce</title>
-    <link rel="stylesheet" href="<c:url value="/template/asset/cart/carts.css"/>"/>
+    <link rel="stylesheet" href="<c:url value="/template/asset/cart/cart.css"/>"/>
 </head>
 <body>
 
@@ -32,9 +32,6 @@
 </table>
 
 <h2 id="h2produce">For customer service, please send an email to ${custServEmail}.</h2>
-<%--<form id="rreturnhome" action="" method="post">
-    <input type="hidden" name="action" value="back">
-    <input type="submit" value="Home">
-</form>--%>
+<a class="aaaaaa" href="home">Home</a>
 </body>
 </html>

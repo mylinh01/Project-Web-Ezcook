@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Register Downloads</title>
-    <link rel="stylesheet" href="<c:url value="/template/asset/download/downloads.css"/>"/>
+    <link rel="stylesheet" href="<c:url value="/template/asset/download/download.css"/>"/>
 </head>
 <body>
 
@@ -16,13 +16,16 @@
 <form class="formregitdl" action="download" method="post">
     <input type="hidden" name="action" value="registerUser">
     <label class="pad_top">Email:</label>
-    <input  class="pad_top" type="email" name="email" value="${user.email}"><br>
+    <input class="pad_top" type="email" name="email" value="${user.email}"><br>
     <label class="pad_top">First Name:</label>
-    <input  class="pad_top" type="text" name="firstName" value="${user.firstName}"><br>
+    <input class="pad_top" type="text" name="firstName" value="${user.firstName}"><br>
     <label class="pad_top">Last Name:</label>
-    <input  class="pad_top" type="text" name="lastName" value="${user.lastName}"><br>
+    <input class="pad_top" type="text" name="lastName" value="${user.lastName}"><br>
     <label>&nbsp;</label>
-    <input  type="submit" value="Register" class="margin_left">
+    <div class="divsp">
+        <input type="submit" value="Register" class="aaaaaa">
+        <a class="aaaaaa" href="home">Home</a>
+    </div>
 </form>
 
 </body>
