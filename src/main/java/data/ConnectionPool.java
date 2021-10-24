@@ -30,11 +30,13 @@ public class ConnectionPool {
         if (pool==null){
             pool=new ConnectionPool();
         }
+        System.out.println(pool);
         return pool;
     }
     public Connection getConnection(){
         try{
             System.out.println(dataSource);
+
             return dataSource.getConnection();
         }catch (SQLException e){
             System.out.println(e);
