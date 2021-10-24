@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port $PORT target/*.war --context-xml context.xml
+web: java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port $PORT target/*.war --context-xml context.xml --enable-naming
