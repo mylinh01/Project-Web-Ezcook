@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 E:\Kì 5\Lap Trinh Web\Giuaki\appbaitapweb\src\main\java\utils\CartSessionListener.java
 E:\Kì 5\Lap Trinh Web\Giuaki\appbaitapweb\src\main\java\controllers\UserController.java
 E:\Kì 5\Lap Trinh Web\Giuaki\appbaitapweb\src\main\java\filters\TestFilter3.java
@@ -7,6 +6,7 @@ E:\Kì 5\Lap Trinh Web\Giuaki\appbaitapweb\src\main\java\utils\SQLUtil.java
 E:\Kì 5\Lap Trinh Web\Giuaki\appbaitapweb\src\main\java\data\ProductIO.java
 E:\Kì 5\Lap Trinh Web\Giuaki\appbaitapweb\src\main\java\filters\LogResponseFilter.java
 E:\Kì 5\Lap Trinh Web\Giuaki\appbaitapweb\src\main\java\filters\TestInitParamsFilter.java
+E:\Kì 5\Lap Trinh Web\Giuaki\appbaitapweb\src\main\java\controllers\UserInterfaceController.java
 E:\Kì 5\Lap Trinh Web\Giuaki\appbaitapweb\src\main\java\data\ConnectionPool.java
 E:\Kì 5\Lap Trinh Web\Giuaki\appbaitapweb\src\main\java\business\NguoiDung.java
 E:\Kì 5\Lap Trinh Web\Giuaki\appbaitapweb\src\main\java\utils\DBUtil.java
@@ -22,35 +22,8 @@ E:\Kì 5\Lap Trinh Web\Giuaki\appbaitapweb\src\main\java\data\UserIO.java
 E:\Kì 5\Lap Trinh Web\Giuaki\appbaitapweb\src\main\java\controllers\ProduceController.java
 E:\Kì 5\Lap Trinh Web\Giuaki\appbaitapweb\src\main\java\filters\LogRequestFilter.java
 E:\Kì 5\Lap Trinh Web\Giuaki\appbaitapweb\src\main\java\controllers\EmailListController.java
+E:\Kì 5\Lap Trinh Web\Giuaki\appbaitapweb\src\main\java\controllers\BlogController.java
 E:\Kì 5\Lap Trinh Web\Giuaki\appbaitapweb\src\main\java\business\Product.java
 E:\Kì 5\Lap Trinh Web\Giuaki\appbaitapweb\src\main\java\data\UserDB.java
 E:\Kì 5\Lap Trinh Web\Giuaki\appbaitapweb\src\main\java\utils\CartContextListener.java
 E:\Kì 5\Lap Trinh Web\Giuaki\appbaitapweb\src\main\java\filters\TestFilter1.java
-=======
-D:\New folder(4)\appbaitapweb\src\main\java\utils\CartSessionListener.java
-D:\New folder(4)\appbaitapweb\src\main\java\filters\LogResponseCookiesFilter.java
-D:\New folder(4)\appbaitapweb\src\main\java\filters\TestFilter2.java
-D:\New folder(4)\appbaitapweb\src\main\java\data\UserDB.java
-D:\New folder(4)\appbaitapweb\src\main\java\data\ConnectionPool.java
-D:\New folder(4)\appbaitapweb\src\main\java\filters\LogResponseFilter.java
-D:\New folder(4)\appbaitapweb\src\main\java\controllers\ProduceController.java
-D:\New folder(4)\appbaitapweb\src\main\java\utils\CartContextListener.java
-D:\New folder(4)\appbaitapweb\src\main\java\data\UserIO.java
-D:\New folder(4)\appbaitapweb\src\main\java\controllers\AdminController.java
-D:\New folder(4)\appbaitapweb\src\main\java\filters\LogRequestFilter.java
-D:\New folder(4)\appbaitapweb\src\main\java\filters\TestInitParamsFilter.java
-D:\New folder(4)\appbaitapweb\src\main\java\utils\DBUtil.java
-D:\New folder(4)\appbaitapweb\src\main\java\filters\TestFilter3.java
-D:\New folder(4)\appbaitapweb\src\main\java\controllers\SqlGatewayController.java
-D:\New folder(4)\appbaitapweb\src\main\java\data\ProductIO.java
-D:\New folder(4)\appbaitapweb\src\main\java\business\Product.java
-D:\New folder(4)\appbaitapweb\src\main\java\filters\TestFilter1.java
-D:\New folder(4)\appbaitapweb\src\main\java\business\LineItem.java
-D:\New folder(4)\appbaitapweb\src\main\java\controllers\EmailListController.java
-D:\New folder(4)\appbaitapweb\src\main\java\utils\CookieUtil.java
-D:\New folder(4)\appbaitapweb\src\main\java\utils\SQLUtil.java
-D:\New folder(4)\appbaitapweb\src\main\java\business\NguoiDung.java
-D:\New folder(4)\appbaitapweb\src\main\java\business\Cart.java
-D:\New folder(4)\appbaitapweb\src\main\java\controllers\DownloadController.java
-D:\New folder(4)\appbaitapweb\src\main\java\controllers\CartController.java
->>>>>>> f13701c0e7fe22f427d489805d8a05c3ac39f67e
