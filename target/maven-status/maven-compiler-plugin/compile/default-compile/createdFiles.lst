@@ -4,7 +4,10 @@ data\UserDB.class
 data\ProductIO.class
 data\ConnectionPool.class
 utils\CartSessionListener.class
+<<<<<<< HEAD
 controllers\UserController.class
+=======
+>>>>>>> f13701c0e7fe22f427d489805d8a05c3ac39f67e
 filters\TestInitParamsFilter.class
 filters\LogResponseCookiesFilter.class
 filters\TestFilter3.class
