@@ -15,8 +15,8 @@ public class ConnectionPool {
             if ( cxt == null ) {
                 System.out.println("Uh oh -- no context!");
             }
-            DataSource ds = (DataSource) cxt.lookup( "java:/comp/env/jdbc/d37tfeuqn9sfbb");
-            if ( ds == null ) {
+            dataSource = (DataSource) cxt.lookup( "java:/comp/env/jdbc/d37tfeuqn9sfbb");
+            if ( dataSource == null ) {
                 System.out.println("Data source not found!");
             }
         }catch (NamingException e)
@@ -32,6 +32,7 @@ public class ConnectionPool {
     }
     public Connection getConnection(){
         try{
+            System.out.println(dataSource);
             return dataSource.getConnection();
         }catch (SQLException e){
             System.out.println(e);

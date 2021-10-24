@@ -2,7 +2,7 @@
 <Context path="">
     <Resource name="jdbc/d37tfeuqn9sfbb" auth="Container"
               driverClassName="org.postgresql.Driver"
-              url="jdbc:postgresql://ec2-54-159-35-35.compute-1.amazonaws.com:5432/d37tfeuqn9sfbb?sslmode=require"
+              url="jdbc:postgresql://ec2-54-159-35-35.compute-1.amazonaws.com:5432/d37tfeuqn9sfbb??ssl=true&amp;sslmode=require"
               username="ukffckmjxuwehs" password="37b320e7be9f32ee6edd7d88a59fe3009bb9b0814e2512e8ab98f54faf687ccc"
               partitionCount="1"
               maxConnectionsPerPartition="20"
