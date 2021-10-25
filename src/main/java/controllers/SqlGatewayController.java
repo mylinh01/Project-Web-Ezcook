@@ -8,6 +8,7 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 
+import java.net.URISyntaxException;
 import java.sql.*;
 @WebServlet(urlPatterns = {"/sqlgateway"})
 public class SqlGatewayController extends HttpServlet {
@@ -17,8 +18,15 @@ public class SqlGatewayController extends HttpServlet {
             throws ServletException, IOException {
 
         // get a connection
-        ConnectionPool pool = ConnectionPool.getInstance();
-        Connection connection = pool.getConnection();
+//        ConnectionPool pool = ConnectionPool.getInstance();
+        Connection connection = null;
+        try {
+            connection = ConnectionPool.getConnection();
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
         String sqlStatement = request.getParameter("sqlStatement");
         String sqlResult = "";
 //        if (action.equals("back")){
@@ -56,7 +64,7 @@ public class SqlGatewayController extends HttpServlet {
             sqlResult = "<p>Error executing the SQL statement: <br>"
                     + e.getMessage() + "</p>";
         } finally {
-            pool.freeConnection(connection);
+//            pool.freeConnection(connection);
         }
         HttpSession session = request.getSession();
         session.setAttribute("sqlResult", sqlResult);

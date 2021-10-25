@@ -3,6 +3,7 @@ package data;
 import business.NguoiDung;
 import utils.DBUtil;
 
+import java.net.URISyntaxException;
 import java.sql.*;
 import java.util.ArrayList;
 
@@ -10,8 +11,15 @@ import java.util.ArrayList;
 public class UserDB {
 
     public static int insert(NguoiDung user) {
-        ConnectionPool pool = ConnectionPool.getInstance();
-        Connection connection = pool.getConnection();
+//        ConnectionPool pool = ConnectionPool.getInstance();
+        Connection connection = null;
+        try {
+            connection = ConnectionPool.getConnection();
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
         PreparedStatement ps = null;
 
         String query
@@ -28,13 +36,20 @@ public class UserDB {
             return 0;
         } finally {
             DBUtil.closePreparedStatement(ps);
-            pool.freeConnection(connection);
+//            pool.freeConnection(connection);
         }
     }
 
     public static int update(NguoiDung user) {
-        ConnectionPool pool = ConnectionPool.getInstance();
-        Connection connection = pool.getConnection();
+//        ConnectionPool pool = ConnectionPool.getInstance();
+        Connection connection = null;
+        try {
+            connection = ConnectionPool.getConnection();
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
         PreparedStatement ps = null;
 
         String query = "UPDATE nguoidung SET "
@@ -53,13 +68,20 @@ public class UserDB {
             return 0;
         } finally {
             DBUtil.closePreparedStatement(ps);
-            pool.freeConnection(connection);
+//            pool.freeConnection(connection);
         }
     }
 
     public static int delete(NguoiDung user) {
-        ConnectionPool pool = ConnectionPool.getInstance();
-        Connection connection = pool.getConnection();
+//        ConnectionPool pool = ConnectionPool.getInstance();
+        Connection connection = null;
+        try {
+            connection = ConnectionPool.getConnection();
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
         PreparedStatement ps = null;
 
         String query = "DELETE FROM nguoidung "
@@ -74,13 +96,20 @@ public class UserDB {
             return 0;
         } finally {
             DBUtil.closePreparedStatement(ps);
-            pool.freeConnection(connection);
+//            pool.freeConnection(connection);
         }
     }
 
     public static boolean emailExists(String email) {
-        ConnectionPool pool = ConnectionPool.getInstance();
-        Connection connection = pool.getConnection();
+//        ConnectionPool pool = ConnectionPool.getInstance();
+        Connection connection = null;
+        try {
+            connection = ConnectionPool.getConnection();
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
         PreparedStatement ps = null;
         ResultSet rs = null;
 
@@ -97,13 +126,20 @@ public class UserDB {
         } finally {
             DBUtil.closeResultSet(rs);
             DBUtil.closePreparedStatement(ps);
-            pool.freeConnection(connection);
+//            pool.freeConnection(connection);
         }
     }
 
     public static NguoiDung selectUser(String email) {
-        ConnectionPool pool = ConnectionPool.getInstance();
-        Connection connection = pool.getConnection();
+//        ConnectionPool pool = ConnectionPool.getInstance();
+        Connection connection = null;
+        try {
+            connection = ConnectionPool.getConnection();
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
         PreparedStatement ps = null;
         ResultSet rs = null;
 
@@ -127,13 +163,20 @@ public class UserDB {
         } finally {
             DBUtil.closeResultSet(rs);
             DBUtil.closePreparedStatement(ps);
-            pool.freeConnection(connection);
+//            pool.freeConnection(connection);
         }
     }
 
     public static ArrayList<NguoiDung> selectUsers() {
-        ConnectionPool pool = ConnectionPool.getInstance();
-        Connection connection = pool.getConnection();
+//        ConnectionPool pool = ConnectionPool.getInstance();
+        Connection connection = null;
+        try {
+            connection = ConnectionPool.getConnection();
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
         PreparedStatement ps = null;
         ResultSet rs = null;
 
@@ -157,7 +200,7 @@ public class UserDB {
         } finally {
             DBUtil.closeResultSet(rs);
             DBUtil.closePreparedStatement(ps);
-            pool.freeConnection(connection);
+//            pool.freeConnection(connection);
         }
     }
 }
