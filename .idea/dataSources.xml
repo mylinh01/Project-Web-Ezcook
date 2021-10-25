@@ -12,7 +12,7 @@ E:/Kì 5/Lap Trinh Web/Giuaki/appbaitapweb/src/main/webapp/META-INF/context.xml<
       <jdbc-url>jdbc:postgresql://ec2-54-159-35-35.compute-1.amazonaws.com:5432/d37tfeuqn9sfbb?ssl=true?ssl=true&amp;amp;sslmode=require</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="d37tfeuqn9sfbb@ec2-54-159-35-35.compute-1.amazonaws.com" uuid="9004c891-4dee-43e7-a33f-527e7228b030">
+    <data-source source="LOCAL" name="d37tfeuqn9sfbb@ec2-54-159-35-35.compute-1.amazonaws.com" uuid="6aab6d4f-a8d7-4b40-967b-3e40b13a7da5">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
