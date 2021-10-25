@@ -164,7 +164,7 @@
                 </div>
             </main>
             <footer>
-                <a href="https://github.com/ngocdiem138/appbaitapweb.git">
+                <a href="https://github.com/ngocdiem138/appbaitapweb.git" target="_blank">
                     <p>Link code Github: https://github.com/ngocdiem138/appbaitapweb.git</p>
                 </a>
 
