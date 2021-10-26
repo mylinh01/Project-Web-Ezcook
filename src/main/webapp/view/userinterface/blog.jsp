@@ -4131,7 +4131,7 @@
                 </li>
 
                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"><a
-                        href="https://www.esheepkitchen.com/about-me/" target="_blank">Về Esheep Kitchen</a></li>
+                        href="https://www.esheepkitchen.com/about-me/" target="_blank">Về Ezcook</a></li>
             </ul>
 
         </div>
