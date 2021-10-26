@@ -45,63 +45,63 @@
             </li>
             <li id="menu-item-1209"
                 class="menu-item menu-item-type-taxonomy menu-item-object-category penci-mega-menu menu-item-1209">
-                <a href="#/" target="_blank">Công Thức</a>
+                <a href="https://www.esheepkitchen.com/category/recipe/" target="_blank">Công Thức</a>
                 <ul class="sub-menu">
                     <li id="menu-item-0" class="menu-item-0">
                         <div class="penci-megamenu">
                             <div class="penci-mega-child-categories">
                                 <a class="mega-cat-child"
-                                   href="#"
+                                   href="/category"
                                    data-id="penci-mega-13" target="_blank">
                                     <span>Bánh mì</span>
                                 </a>
                                 <a class="mega-cat-child"
-                                   href="#"
+                                   href="https://www.esheepkitchen.com/category/recipe/cakes-and-sweet-treats/"
                                    data-id="penci-mega-4" target="_blank">
                                     <span>Bánh ngọt</span>
                                 </a>
                                 <a class="mega-cat-child"
-                                   href="#"
+                                   href="https://www.esheepkitchen.com/category/recipe/breakfast/"
                                    data-id="penci-mega-10" target="_blank">
                                     <span>Breakfast</span>
                                 </a>
                                 <a class="mega-cat-child"
-                                   href="#"
+                                   href="https://www.esheepkitchen.com/category/recipe/drink/"
                                    data-id="penci-mega-6" target="_blank">
                                     <span>Đồ uống</span>
                                 </a>
                                 <a class="mega-cat-child"
-                                   href="#"
+                                   href="https://www.esheepkitchen.com/category/recipe/appetizers/"
                                    data-id="penci-mega-9" target="_blank">
                                     <span>Khai vị</span>
                                 </a>
                                 <a class="mega-cat-child"
-                                   href="#"
+                                   href="https://www.esheepkitchen.com/category/recipe/korean-food/"
                                    data-id="penci-mega-20" target="_blank">
                                     <span>Korean Food</span>
                                 </a>
                                 <a class="mega-cat-child"
-                                   href="#"
+                                   href="https://www.esheepkitchen.com/category/recipe/main-dishes/"
                                    data-id="penci-mega-11" target="_blank">
                                     <span>Món chính</span>
                                 </a>
                                 <a class="mega-cat-child"
-                                   href="#"
+                                   href="https://www.esheepkitchen.com/category/recipe/side-dishes/"
                                    data-id="penci-mega-12" target="_blank">
                                     <span>Món phụ</span>
                                 </a>
                                 <a class="mega-cat-child"
-                                   href="#"
+                                   href="https://www.esheepkitchen.com/category/recipe/dessert/"
                                    data-id="penci-mega-3" target="_blank">
                                     <span>Món tráng miệng</span>
                                 </a>
                                 <a class="mega-cat-child"
-                                   href="#"
+                                   href="https://www.esheepkitchen.com/category/recipe/vietnamese-cuisine/"
                                    data-id="penci-mega-14" target="_blank">
                                     <span>Món Việt Nam</span>
                                 </a>
                                 <a class="mega-cat-child cat-active all-style"
-                                   href="#" data-id="penci-mega-138"
+                                   href="https://www.esheepkitchen.com/category/recipe/" data-id="penci-mega-138"
                                    target="_blank">
                                     <span>All</span>
                                 </a>
@@ -2092,7 +2092,7 @@
                     href="https://www.esheepkitchen.com/cookbooks/" target="_blank">Esheep Kitchen&#8217;s Cookbook</a>
             </li>
             <li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"><a
-                    href="https://www.esheepkitchen.com/about-me/" target="_blank">Về Ezcook</a></li>
+                    href="https://www.esheepkitchen.com/about-me/" target="_blank">Về Esheep Kitchen</a></li>
         </ul>
     </nav>
     <!-- Toggle menu if size for mobile -->
@@ -2115,37 +2115,37 @@
                             <div class="penci-megamenu">
                                 <div class="penci-mega-child-categories">
                                     <a class="mega-cat-child"
-                                       href="https://www.esheepkitchen.com/category/recipe/bread/"
+                                       href="category"
                                        data-id="penci-mega-13" target="_blank"><span>Bánh mì</span></a>
                                     <a class="mega-cat-child"
-                                       href="https://www.esheepkitchen.com/category/recipe/cakes-and-sweet-treats/"
+                                       href="category"
                                        data-id="penci-mega-4" target="_blank"><span>Bánh ngọt</span></a>
                                     <a class="mega-cat-child"
-                                       href="https://www.esheepkitchen.com/category/recipe/breakfast/"
+                                       href="category"
                                        data-id="penci-mega-10" target="_blank"><span>Breakfast</span></a>
                                     <a class="mega-cat-child"
-                                       href="https://www.esheepkitchen.com/category/recipe/drink/"
+                                       href="category"
                                        data-id="penci-mega-6" target="_blank"><span>Đồ uống</span></a>
                                     <a class="mega-cat-child"
-                                       href="https://www.esheepkitchen.com/category/recipe/appetizers/"
+                                       href="category"
                                        data-id="penci-mega-9" target="_blank"><span>Khai vị</span></a>
                                     <a class="mega-cat-child"
-                                       href="https://www.esheepkitchen.com/category/recipe/korean-food/"
+                                       href="category"
                                        data-id="penci-mega-20" target="_blank"><span>Korean Food</span></a>
                                     <a class="mega-cat-child"
-                                       href="https://www.esheepkitchen.com/category/recipe/main-dishes/"
+                                       href="category"
                                        data-id="penci-mega-11" target="_blank"><span>Món chính</span></a>
                                     <a class="mega-cat-child"
-                                       href="https://www.esheepkitchen.com/category/recipe/side-dishes/"
+                                       href="category"
                                        data-id="penci-mega-12" target="_blank"><span>Món phụ</span></a>
                                     <a class="mega-cat-child"
-                                       href="https://www.esheepkitchen.com/category/recipe/dessert/"
+                                       href="category"
                                        data-id="penci-mega-3" target="_blank"><span>Món tráng miệng</span></a>
                                     <a class="mega-cat-child"
-                                       href="https://www.esheepkitchen.com/category/recipe/vietnamese-cuisine/"
+                                       href="category"
                                        data-id="penci-mega-14" target="_blank"><span>Món Việt Nam</span></a>
                                     <a class="mega-cat-child cat-active all-style"
-                                       href="https://www.esheepkitchen.com/category/recipe/"
+                                       href="category"
                                        data-id="penci-mega-138" target="_blank"><span>All</span></a>
                                 </div>
 
@@ -4131,7 +4131,7 @@
                 </li>
 
                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"><a
-                        href="https://www.esheepkitchen.com/about-me/" target="_blank">Về Ezcook</a></li>
+                        href="https://www.esheepkitchen.com/about-me/" target="_blank">Về Esheep Kitchen</a></li>
             </ul>
         </div>
     </nav>
@@ -4813,7 +4813,6 @@
                 <div class="item text-center">
                     <a href="${blog}"><img src="<c:url value="/template/asset/userinterface/img/2.jpg"/>" alt=""></a>
                     <div>
-                        <span>Bánh ngọt <i class="fal fa-utensils-alt"></i> Đồ uống</span>
                         <a href="#">
                             <h5>[SQUID GAME] Trò chơi con mực</h5>
                         </a>
