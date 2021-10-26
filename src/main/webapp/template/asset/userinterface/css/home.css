@@ -1,3 +1,6 @@
+nav {
+    position: fixed;
+}
 #slider {
     margin-top: 60px;
     z-index: 0;
