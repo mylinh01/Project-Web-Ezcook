@@ -2092,7 +2092,7 @@
                     href="https://www.esheepkitchen.com/cookbooks/" target="_blank">Esheep Kitchen&#8217;s Cookbook</a>
             </li>
             <li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"><a
-                    href="https://www.esheepkitchen.com/about-me/" target="_blank">Về Esheep Kitchen</a></li>
+                    href="https://www.esheepkitchen.com/about-me/" target="_blank">Về Ezcook</a></li>
         </ul>
     </nav>
     <!-- Toggle menu if size for mobile -->
