@@ -14,8 +14,12 @@ nav {
     margin-top: 50px;
 }
 
-#content .session h4 {
+#content .session >h4 {
     padding: 30px 0;
+    background-color: #000000;
+    color: #f0f0f0;
+    padding-left: 5px;
+
 }
 
 #content .session > div {
