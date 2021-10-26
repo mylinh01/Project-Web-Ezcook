@@ -1,4 +1,6 @@
-
+nav {
+    position: fixed;
+}
 h4 {
     letter-spacing: 2px;
 }
