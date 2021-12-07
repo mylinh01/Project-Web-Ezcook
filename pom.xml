@@ -3,76 +3,78 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>com.example</groupId>
-    <artifactId>baitapweb</artifactId>
+    <groupId>com.ezcook</groupId>
+    <artifactId>ezcook</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>baitapweb</name>
+    <name>ezcook</name>
     <packaging>war</packaging>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.source>1.8</maven.compiler.source>
-        <junit.version>5.7.1</junit.version>
+        <junit.version>5.8.1</junit.version>
+        <servlet.version>4.0.1</servlet.version>
+        <postgresql.version>42.2.24.jre7</postgresql.version>
+        <hibernate.version>4.3.7.Final</hibernate.version>
+        <sitemesh.version>2.4.2</sitemesh.version>
+        <javax.servlet.version>1.2</javax.servlet.version>
+        <commons.beanutils.version>1.9.3</commons.beanutils.version>
+        <displaytag.version>1.2</displaytag.version>
+        <commons.fileupload.version>1.4</commons.fileupload.version>
+        <commons.io.version>20030203.000550</commons.io.version>
+        <testng.version>7.4.0</testng.version>
+        <inject.version>1</inject.version>
+        <weld.servlet.version>2.4.8.Final</weld.servlet.version>
+        <jackson.databind.version>2.13.0</jackson.databind.version>
+        <gson.version>2.8.8</gson.version>
+        <okhttp3.version>4.9.2</okhttp3.version>
+        <apache.maven.plugins.version>3.3.1</apache.maven.plugins.version>
     </properties>
 
     <dependencies>
-
+<!--        -->
         <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jstl</artifactId>
-            <version>1.2</version>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>javax.mail</artifactId>
+            <version>1.6.2</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/javax.mail/javax.mail-api -->
         <dependency>
-            <groupId>org.apache.tomcat.maven</groupId>
-            <artifactId>tomcat-maven-plugin</artifactId>
-            <version>2.2</version>
-            <type>pom</type>
+            <groupId>javax.mail</groupId>
+            <artifactId>javax.mail-api</artifactId>
+            <version>1.6.0</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>9.4-1205-jdbc41</version>
-        </dependency>
-        <!--        hibernate-->
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>4.3.7.Final</version>
-        </dependency>
-        <!--        decorator-->
-        <dependency>
-            <groupId>opensymphony</groupId>
-            <artifactId>sitemesh</artifactId>
-            <version>2.4.2</version>
-        </dependency>
-        <!--        -->
-        <dependency>
-            <groupId>com.amazon.redshift</groupId>
-            <artifactId>redshift-jdbc42</artifactId>
-            <version>2.1.0.1</version>
-        </dependency>
-        <!-- taglibs-standard-spec-*.jar -->
-        <!-- http://mvnrepository.com/artifact/org.apache.taglibs/taglibs-standard-spec -->
-        <dependency>
-            <groupId>org.apache.taglibs</groupId>
-            <artifactId>taglibs-standard-spec</artifactId>
-            <version>1.2.5</version>
-        </dependency>
-        <!-- taglibs-standard-impl-*.jar -->
-        <!-- http://mvnrepository.com/artifact/org.apache.taglibs/taglibs-standard-impl -->
-        <dependency>
-            <groupId>org.apache.taglibs</groupId>
-            <artifactId>taglibs-standard-impl</artifactId>
-            <version>1.2.5</version>
-        </dependency>
+        <!--............https://mvnrepository.com/artifact/javax.servlet/servlet-api...................-->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
-            <version>4.0.1</version>
+            <version>${servlet.version}</version>
             <scope>provided</scope>
         </dependency>
+        <!--........................https://mvnrepository.com/artifact/org.postgresql/postgresql..................... -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${postgresql.version}</version>
+        </dependency>
+        <!--.............https://mvnrepository.com/artifact/org.hibernate/hibernate-core...........................-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate.javax.persistence</groupId>
+            <artifactId>hibernate-jpa-2.1-api</artifactId>
+            <version>1.0.2.Final</version>
+        </dependency>
+        <!--..........https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api................-->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
@@ -80,51 +82,126 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.google.api-client</groupId>
-            <artifactId>google-api-client</artifactId>
-            <version>1.22.0</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>com.google.guava</groupId>
-                    <artifactId>guava-jdk5</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <!--................https://mvnrepository.com/artifact/opensymphony/sitemesh..........-->
         <dependency>
-            <groupId>javax.servlet.jsp</groupId>
-            <artifactId>javax.servlet.jsp-api</artifactId>
-            <version>2.3.1</version>
+            <groupId>opensymphony</groupId>
+            <artifactId>sitemesh</artifactId>
+            <version>${sitemesh.version}</version>
+        </dependency>
+        <!--       .......... https://mvnrepository.com/artifact/javax.servlet/jstl............-->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>${javax.servlet.version}</version>
+        </dependency>
+        <!--      ......  https://mvnrepository.com/artifact/commons-beanutils/commons-beanutils...-->
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>${commons.beanutils.version}</version>
+        </dependency>
+        <!--.........https://mvnrepository.com/artifact/displaytag/displaytag...........-->
+        <dependency>
+            <groupId>displaytag</groupId>
+            <artifactId>displaytag</artifactId>
+            <version>${displaytag.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>jcl104-over-slf4j</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!--     ........   https://mvnrepository.com/artifact/commons-fileupload/commons-fileupload........-->
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>${commons.fileupload.version}</version>
+        </dependency>
+        <!--.............https://mvnrepository.com/artifact/commons-io/commons-io.............-->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${commons.io.version}</version>
+        </dependency>
+        <!--   ................https://mvnrepository.com/artifact/org.testng/testng..................-->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+            <scope>test</scope>
+        </dependency>
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/javax.inject/javax.inject &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>javax.inject</groupId>-->
+<!--            <artifactId>javax.inject</artifactId>-->
+<!--            <version>${inject.version}</version>-->
+<!--        </dependency>-->
+
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.jboss.weld.servlet/weld-servlet &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.jboss.weld.servlet</groupId>-->
+<!--            <artifactId>weld-servlet</artifactId>-->
+<!--            <version>${weld.servlet.version}</version>-->
+<!--        </dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.databind.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>${gson.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp -->
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>${okhttp3.version}</version>
         </dependency>
     </dependencies>
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <version>3.0.2</version>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals><goal>copy</goal></goals>
-                        <configuration>
-                            <artifactItems>
-                                <artifactItem>
-                                    <groupId>com.github.jsimone</groupId>
-                                    <artifactId>webapp-runner</artifactId>
-                                    <version>8.5.31.0</version>
-                                    <destFileName>webapp-runner.jar</destFileName>
-                                </artifactItem>
-                            </artifactItems>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-war-plugin</artifactId>
+                        <version>3.3.1</version>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-dependency-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <phase>package</phase>
+                                <goals><goal>copy</goal></goals>
+                                <configuration>
+                                    <artifactItems>
+                                        <artifactItem>
+                                            <groupId>com.heroku</groupId>
+                                            <artifactId>webapp-runner</artifactId>
+                                            <version>9.0.41.0</version>
+                                            <destFileName>webapp-runner.jar</destFileName>
+                                        </artifactItem>
+                                    </artifactItems>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
     </build>
 </project>

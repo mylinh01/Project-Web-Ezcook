@@ -1,4 +1,7 @@
-
+.nav{
+    position: fixed;
+    padding-top: 10px;
+}
 h4 {
     letter-spacing: 2px;
 }

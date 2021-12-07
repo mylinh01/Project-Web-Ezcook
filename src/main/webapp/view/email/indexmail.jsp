@@ -13,11 +13,13 @@
 <h1 id="hat1">Join our email list</h1>
 <h2>To join our email list, enter your name and email address below.</h2>
 
+    <p class="error">${message.message}</p>
+
 <form action="${thanks}" method="post" class="formemail">
     <div class="div-thanks">
         <input type="hidden" name="action" value="add">
         <label class="pad_top">Email:</label>
-        <input class="pad_top" type="email" name="email" value="${user.email}"><br>
+        <input class="pad_top" type="email" name="email" value="${message.message}"><br>
         <label class="pad_top">First Name:</label>
         <input class="pad_top" type="text" name="firstName" value="${user.firstName}"><br>
         <label class="pad_top">Last Name:</label>
