@@ -611,12 +611,16 @@
                         <input type="submit" id="search-submit" />
                     </form>
                 </li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53">
-                    <a href="<c:url value='/login'/>">Đăng nhập</a>
-                </li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53">
-                    <a href="<c:url value='/login?action=logout'/>">Logout</a>
-                </li>
+                <c:if test="${user == null}">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53">
+                        <a href="<c:url value='/login'/>">Đăng nhập</a>
+                    </li>
+                </c:if>
+                <c:if test="${user != null}">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53">
+                        <a href="<c:url value='/login?action=logout'/>">Logout</a>
+                    </li>
+                </c:if>
             </ul>
         </div>
     </nav>
