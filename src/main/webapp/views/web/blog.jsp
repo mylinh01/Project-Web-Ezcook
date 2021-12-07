@@ -141,7 +141,7 @@
 <script>
 
     const urlAPI = {
-        Comment: 'http://localhost:8080/api-comment'
+        Comment: 'https://appbaitapweb.herokuapp.com/api-comment'
     }
 
     const submitComment = function () {
