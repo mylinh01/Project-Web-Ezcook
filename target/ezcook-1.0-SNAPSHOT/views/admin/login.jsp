@@ -33,8 +33,8 @@
             </c:if>
             <input type="text" placeholder="Họ và Tên" name="pojo.fullname" required />
             <input type="text" placeholder="Tài khoản"  name="pojo.username" required minlength="6" maxlength="20" pattern="[a-z][6-20]"/>
-            <input type="text" placeholder="Mật khẩu" id="password" name="pojo.password" required minlength="6" maxlength="20"/>
-            <input type="text" placeholder="Nhập lại mật khẩu" required oninput="check(this)"/>
+            <input type="password" placeholder="Mật khẩu" id="password" name="pojo.password" required minlength="6" maxlength="20"/>
+            <input type="password" placeholder="Nhập lại mật khẩu" required oninput="check(this)"/>
             <input type="email" placeholder="Email" name="pojo.email" required/>
             <button type="submit">Đăng kí</button>
         </form>
@@ -43,7 +43,7 @@
         <form action="${login}" method="post">
             <h1>Đăng Nhập</h1>
             <div class="social-container">
-                <a href="<c:url value='https://accounts.google.com/o/oauth2/auth?scope=email&redirect_uri=http://localhost:8080/login-google&response_type=code
+                <a href="<c:url value='https://accounts.google.com/o/oauth2/auth?scope=email&redirect_uri=https://appbaitapweb.herokuapp.com/login-google&response_type=code
     &client_id=405005216042-pno7k9oitgqllnqr6to7tk36cnqn43g8.apps.googleusercontent.com&approval_prompt=force'/>"
                    class="social "><i class="fa fa-google iconGoogle"></i></a>
             </div>
