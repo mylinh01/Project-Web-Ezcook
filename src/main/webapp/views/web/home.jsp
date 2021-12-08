@@ -75,8 +75,11 @@
                                    href="<c:url value='/blog?id=${food.id}'/>"></a>
                                 <div class="penci-mag-featured-content">
                                     <div class="feat-text">
-                                        <h3><a title="${food.name}"
-                                               href="<c:url value='/blog?id=${food.id}'/>">${food.name}</a></h3>
+                                        <h3>
+                                            <a style="color:#f3f3f3; font-weight: bold"
+                                               title="${food.name}"
+                                               href="<c:url value='/blog?id=${food.id}'/>">${food.name}</a>
+                                        </h3>
                                         <div class="feat-meta">
                                             <span class="feat-time"><c:out
                                                     value='${cs.formatTime(food.createdOn)}'/></span>
@@ -107,20 +110,25 @@
                                 <div>
                                     <span>Ezcook <i class="fal fa-utensils-alt"></i> <c:out
                                             value='${food.foodtype.name}'/></span>
-                                    <a href="<c:url value='/#'/>">
+                                    <a href="<c:url value='/blog?id=${food.id}'/>">
                                         <h5><c:out value='${food.name}'/></h5>
                                     </a>
                                     <span class="author">written by <a href="<c:url value='/#'/>">Ezcook</a>
                                         |  <c:out value='${cs.formatTime(food.createdOn)}'/></span>
+                                    <p id="demo"></p>
                                     <hr>
                                     <p class="content-food"><c:out
                                             value='${cs.getTextBetweenTags("p", food.content)}'/></p>
                                     <a href="<c:url value='/blog?id=${food.id}'/>">Xem tiếp...</a>
                                     <div class="social-icon">
-                                        <a href="<c:url value='https://www.facebook.com/lqtrung.01/'/> " target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="<c:url value='https://www.facebook.com/lqtrung.01/'/>"target="_blank"><i class="fab fa-google-plus-g"></i></a>
-                                        <a href="<c:url value='https://www.facebook.com/lqtrung.01/'/>"target="_blank"><i class="fab fa-twitter"></i></a>
-                                        <a href="<c:url value='https://www.facebook.com/lqtrung.01/'/>"target="_blank"><i class="fab fa-instagram"></i></a>
+                                        <a href="<c:url value='https://www.facebook.com/lqtrung.01/'/> "
+                                           target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="<c:url value='https://www.facebook.com/lqtrung.01/'/>" target="_blank"><i
+                                                class="fab fa-google-plus-g"></i></a>
+                                        <a href="<c:url value='https://www.facebook.com/lqtrung.01/'/>" target="_blank"><i
+                                                class="fab fa-twitter"></i></a>
+                                        <a href="<c:url value='https://www.facebook.com/lqtrung.01/'/>" target="_blank"><i
+                                                class="fab fa-instagram"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -147,27 +155,29 @@
                                 <h5><c:out value='${food.name}'/></h5>
                             </a>
                             <span class="author">written by <a href="<c:url value='/#'/>">Ezcook</a>
-                                |  <c:out value='${cs.formatTime(food.createdOn)}'/></span>
+                                        |  <c:out value='${cs.formatTime(food.createdOn)}'/></span>
                             <p id="demo"></p>
-
                             <hr>
                             <p class="content-food"><c:out value='${cs.getTextBetweenTags("p", food.content)}'/></p>
-                            <a href="<c:url value='/#'/>">Xem tiếp...</a>
-
+                            <a href="<c:url value='/blog?id=${food.id}'/>">Xem tiếp...</a>
                             <div class="social-icon">
-                                <a href="<c:url value='https://www.facebook.com/lqtrung.01/'/>"target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                <a href="<c:url value='https://www.facebook.com/lqtrung.01/'/>"target="_blank"><i class="fab fa-google-plus-g"></i></a>
-                                <a href="<c:url value='https://www.facebook.com/lqtrung.01/'/>"target="_blank"><i class="fab fa-twitter"></i></a>
-                                <a href="<c:url value='https://www.facebook.com/lqtrung.01/'/>"target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="<c:url value='https://www.facebook.com/lqtrung.01/'/>" target="_blank"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="<c:url value='https://www.facebook.com/lqtrung.01/'/>" target="_blank"><i
+                                        class="fab fa-google-plus-g"></i></a>
+                                <a href="<c:url value='https://www.facebook.com/lqtrung.01/'/>" target="_blank"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a href="<c:url value='https://www.facebook.com/lqtrung.01/'/>" target="_blank"><i
+                                        class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
                 </c:forEach>
             </div>
         </div>
-        <div class="wrapper">
-            <button onclick="loadMore()" class="btn btn-primary" style="text-align: center"><i
-                    class="fa fa-refresh fa-spin loading"></i>Xem tiếp...
+        <div class="wrapper text-center">
+            <button onclick="loadMore()" class="btn btn-primary"><i
+                    class="fa fa-refresh fa-spin loading"></i>Xem thêm
             </button>
         </div>
         <hr>

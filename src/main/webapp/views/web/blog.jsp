@@ -101,7 +101,7 @@
                     <div>
                         <c:forEach var='item' items='${fService.getRelatedFood(food)}'>
                             <a href="<c:url value='/blog?id=${item.id}'/>" class="text-center">
-                                <img src="<c:url value='${item.image}'/>" alt="">
+                                <img src="<c:url value='${item.image}'/>" alt="" style="object-fit:cover; height: 180px; width: 270px">
                                 <h6><c:out value='${item.name}'/></h6>
                                 <span><c:out value='${cservice.formatTime(item.modifiedOn)}'/></span>
                             </a>

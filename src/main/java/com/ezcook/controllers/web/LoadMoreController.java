@@ -49,7 +49,9 @@ public class LoadMoreController extends HttpServlet {
                 out.write(food.getName().getBytes(StandardCharsets.UTF_8));
                 out.write("\"/></a>\n".getBytes(StandardCharsets.UTF_8));
                 out.write("<div>\n".getBytes(StandardCharsets.UTF_8));
-                out.write("<span>Ezook <i class=\"fal fa-utensils-alt\"></i> Đồ uống</span>\n".getBytes(StandardCharsets.UTF_8));
+                out.write("<span>Ezook <i class=\"fal fa-utensils-alt\"></i>".getBytes(StandardCharsets.UTF_8));
+                out.write(food.getFoodtype().getName().getBytes(StandardCharsets.UTF_8));
+                out.write("</span>\n".getBytes(StandardCharsets.UTF_8));
 
                 out.write(("<a href=\"/blog?id=" + food.getId() + "\">").getBytes(StandardCharsets.UTF_8));
                    /* out.write(String.valueOf(food.getId()).getBytes("UTF-8"));
@@ -59,7 +61,8 @@ public class LoadMoreController extends HttpServlet {
                 out.write(food.getName().getBytes(StandardCharsets.UTF_8));
                 out.write("</h5>\n".getBytes(StandardCharsets.UTF_8));
                 out.write("</a>\n".getBytes(StandardCharsets.UTF_8));
-                out.write("<span class=\"author\">by <a href=\"<c:url value='/#'/>\">Ezcook</a></span>\n".getBytes(StandardCharsets.UTF_8));
+                out.write("<span class=\"author\">written by <a href=\"<c:url value='/#'/>\">Ezcook | </a></span>\n".getBytes(StandardCharsets.UTF_8));
+                out.write(cs.formatTime(food.getCreatedOn()).getBytes(StandardCharsets.UTF_8));
                 out.write("<p id=\"demo\"></p>\n".getBytes(StandardCharsets.UTF_8));
                 out.write("\n".getBytes(StandardCharsets.UTF_8));
                 out.write("<hr>\n".getBytes(StandardCharsets.UTF_8));
