@@ -1,5 +1,6 @@
 h4 {
     letter-spacing: 2px;
+    font-weight: bold;
 }
 
 /* main */
@@ -162,9 +163,22 @@ iframe {
 
 
 /* AUTHOR */
+#author .social i,
+#container .content .share i {
+    width: 30px;
+    font-size: 120%;
+    text-align: center;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
 
+#author .social i:hover,
+#container .content .share i:hover {
+    color: #689f38;
+    transform: scale(1.3);
+}
 #author {
-    padding: 50px 10px 0;
+    padding: 0px 20px 0px;
     flex-basis: 25%;
 }
 
@@ -173,8 +187,8 @@ iframe {
     top: 100px;
 }
 
-#author h3 {
-    padding-top: 20px;
+#author h4 {
+    padding-top: 10px;
     position: relative;
 }
 
@@ -184,8 +198,7 @@ iframe {
 }
 
 #author .social {
-    padding-top: 20px;
+    padding-top: 10px;
 }
-
 
 /* main */
