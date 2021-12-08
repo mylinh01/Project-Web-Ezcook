@@ -135,6 +135,7 @@ public class UserService  implements IUserService {
     }
     public UserDto updateUser(UserDto userDto){
         User entity= UserBeanUtil.dto2Entity(userDto);
+        entity.setCreatedOn(Timestamp.from(Instant.now()));
         entity.setModifiedOn(Timestamp.from(Instant.now()));
         entity=SingletonDaoUtil.getUserDaoInstance().update(entity);
         userDto= UserBeanUtil.entity2Dto(entity);

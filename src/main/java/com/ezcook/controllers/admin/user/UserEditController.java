@@ -48,11 +48,11 @@ public class UserEditController extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        UserCommand command = FormUtil.populate(UserCommand.class, req);
 
         resp.setContentType("text/html");
         resp.setCharacterEncoding("UTF-8");
         req.setCharacterEncoding("UTF-8");
+        UserCommand command = FormUtil.populate(UserCommand.class, req);
         UserDto pojo = command.getPojo();
 
         Integer a = pojo.getId_user();

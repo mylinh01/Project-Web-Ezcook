@@ -48,6 +48,7 @@ public class FoodTypeService /*extends AbstractDao<Integer, FoodType>*/ implemen
     }
     public FoodTypeDto updateFoodType(FoodTypeDto foodTypeDto){
         FoodType entity= FoodTypeBeanUtil.dto2Entity(foodTypeDto);
+        entity.setCreatedOn(Timestamp.from(Instant.now()));
         entity.setModifiedOn(Timestamp.from(Instant.now()));
         entity=SingletonDaoUtil.getFoodTypeDaoInstance().update(entity);
         foodTypeDto= FoodTypeBeanUtil.entity2Dto(entity);
